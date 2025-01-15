@@ -4,7 +4,44 @@
     box-sizing: border-box;
 }
 
+/* paleta de colores que me gustan */
+/* 
+#a157a6 (rosa)
+#ff66c2 (rosa)
+#c1dee8
+#222a3b
+#b49f42
+#3e6d8a
+#152f45
+*/
+
+/* ads */
+.banner--hr {
+    width: 85%; 
+    background-color: #ff66c2;
+}
+.banner--bg {
+    background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
+    background-size: cover;
+    background-position: right;
+}
+.banner--hr-sideimage {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .banner--bg {
+        background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
+
 /* general */
+
 body {
     display: relative;
 }
@@ -13,6 +50,10 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover {
+    color: rgb(209, 93, 132);
+    transition: color 0.2s;
+}
 footer a:hover {
     color: rgb(255, 255, 255);
 
@@ -20,23 +61,23 @@ footer a:hover {
 li {
     list-style-type: none;
 }
-ol {
+ul {
     margin: 0%;
     padding: 0%;
 }
 
 /* body */
     /* sticky */
-.--fixed-bottom-right {
-    position: fixed;
-    right: 5px;
-    bottom: 20px;
-}
-
 .sticky-icons--size {
     width: 60px;
     height: auto;
 }
+
+.--fixed-bottom-right {
+    position: fixed; 
+    right: 5px;
+    bottom: 20px;
+}    
 
     /* body grid */
 .body--grid-area {
@@ -159,6 +200,7 @@ footer {
     border-radius: 10px 0px 0px 10px;
 }
 
+/* query */
 @media (min-width: 769px) {
     .aside--sm-hidden {
         display: block;
@@ -194,4 +236,21 @@ footer {
     .--bg-card h2 {
         font-size: 55px;
     }
+}
+
+
+
+/* card (sin colision sobre fixed-icons)*/
+.--card-size {
+    width: 18rem;
+    height: 30rem;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.--card-img {
+    max-width: 100%;
+    height: 45%;
+    object-fit: contain;
+    object-position: center;
 }
