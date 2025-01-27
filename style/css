@@ -208,12 +208,16 @@ footer {
 
 .comment--style {
   width: 90%;
-  height: 50%;
+  height: 45%;
   display: flex;
   justify-content: center;
   background-color: #ebebeb;
   border: 1 solid grey;
   border-radius: 10px;
+}
+.comment--style p {
+  margin: 0%;
+  padding: 0%;
 }
 
 /* account */
@@ -379,6 +383,10 @@ ul {
   background-color: #dddddd;
 }
 
+.--bg-dark-grey {
+  background-color: #303030;
+}
+
 .bg--yellow {
   background-color: #eeda81;
 }
@@ -430,4 +438,4 @@ ul {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */

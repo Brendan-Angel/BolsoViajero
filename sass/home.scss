@@ -1,0 +1,62 @@
+/* home */
+
+
+/* query's home */
+@media (min-width: 1024px) {
+    .--fs-md-h1 {
+        font-size: 3.5rem;
+    }
+    .--fs-md-sbttl {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* content-one */
+/* no recuerdo como usar imagenes de fondo (arreglar después) */
+.--bg-card-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/viajes.jpg);
+}
+.--bg-card-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/hotel.jpg);
+}
+.--bg-card-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/carousel.jpg);
+}
+.--bg-card-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/socio.jpg);
+}
+
+.--bg-card {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.--bg-card h2 {
+    font-size: 40px;
+}
+
+.--card-comment {
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* patreon */
+.logos {
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.slide-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    img {
+        height: 50px;
+    }
+}

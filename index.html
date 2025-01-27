@@ -12,13 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- animations / animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- sticky icons fixed -->
     <div class="sticky">
-        <button class="btn --fixed-bottom-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
+        <button class="btn --fixed-bottom-right z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="/assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
         <div class="offcanvas offcanvas-end --offcanvas-custom-size" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header bg-black rounded-top">
+            <div class="offcanvas-header bg-dark rounded-top">
                 <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">¿En qué podemos ayudarle?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -33,16 +36,16 @@
         </div>
     </div>
     <!-- body -->
-        <!-- header and intro with bg-img -->
+    <!-- header and intro with bg-img -->
     <div class="body--grid-area">
-        <div class="header-intro--grid">
-            <header class="col header-2">
+        <header class="header-area header-intro--grid">
+            <div class="col header-2">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="navbar--custom-underline">
                             <nav class="navbar navbar-expand-lg">
                                 <div class="container-fluid">
-                                    <img src="../assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
+                                    <img src="/assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
                                     <h3 class="m-1 text-light">BolsoViajero</h3>
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
@@ -50,24 +53,24 @@
                                     <div class="collapse navbar-collapse bg--white m-3" id="navbarSupportedContent">
                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                                             <li class="nav-item">
-                                                <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                                                <a class="nav-link text-light" aria-current="page" href="#">Home</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link text-light" href="./pages/viajes.html">Viajes</a>
+                                                <a class="nav-link text-light" href="/pages/viajes.html">Viajes</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link text-light" href="./pages/hoteles.html">Hoteles</a>
+                                                <a class="nav-link text-light" href="/pages/hoteles.html">Hoteles</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link text-light" href="./pages/atracciones.html">Atracciones</a>
+                                                <a class="nav-link text-light" href="/pages/atracciones.html">Atracciones</a>
                                             </li>
                                             
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="./pages/contacts.html">Contacto</a></li>
+                                                    <li><a class="dropdown-item" href="/pages/contacts.html">Contacto</a></li>
                                                     <li><hr class="dropdown-divider"></li>
-                                                    <li><a class="dropdown-item" href="./pages/account.html">Iniciar Sesión</a></li>
+                                                    <li><a class="dropdown-item" href="/pages/account.html">Iniciar Sesión</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -77,27 +80,27 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
             <div class="col intro-2 align-content-center">
                 <div class="container-fluid">
                     <div class="row row-cols-1">
                         <div class="col">
-                            <h1 class="text-light">Viajar nunca fue tan barato</h1>
+                            <h1 class="text-light --fs-md-h1 --kf-fade-in">Viajar nunca fue tan barato</h1>
                             <hr>
-                            <p class="text-light">Conocé el porqué todos nos eligen.<br> Sobrellevamos la regla de las tres B como nuestra escarapela; <br> Bueno, Bonito y Barato es nuestro canto.</p>
+                            <p class="text-light --fs-md-sbttl --kf-fade-in-delay-2s">Conocé el porqué todos nos eligen.<br> Sobrellevamos la regla de las tres B como nuestra escarapela; <br> Bueno, Bonito y Barato es nuestro canto.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <!-- main content -->
         <main class="container-fluid">
             <div class="row row-cols-1">
-                <!-- content A -->
+                <!-- content a -->
                 <div class="col p-0 pb-5 mb-3" style="background-color: #c3cfd3;">
                     <div class="container mt-5">
                         <div class="row row-cols-1 gap-5 ms-1">
-                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-start">
+                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-start" data-aos="fade-up">
                                 <div class="col-12 col-md-8 --bg-card --bg-card-1 text-light align-content-center text-center">
                                     <span>Enteráte de nuestros</span>
                                     <h2 class="fw-bolder">Viajes</h2>
@@ -106,7 +109,7 @@
                                     <span class="fs-2 opacity-50">Una amplia selección de viajes al alcance de tu bolsillo</span>
                                 </div>
                             </div>
-                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-end">
+                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-end" data-aos="fade-up">
                                 <div class="col-12 col-md-8 --bg-card --bg-card-2 text-light order-md-2 align-content-center text-center">
                                     <span>Relajate en nuestra gran lista de</span>
                                     <h2>Hoteles y Apartamentos</h2>
@@ -115,7 +118,7 @@
                                     <span class="fs-2 opacity-50">Una amplia gama de hoteles precio-calidad en los que relajarse de tus aventuras</span>
                                 </div>
                             </div>
-                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-start">
+                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-start" data-aos="fade-up">
                                 <div class="col-12 col-md-8 --bg-card --bg-card-3 text-light align-content-center text-center">
                                     <span>Visita las maravillas de este mundo y sus</span>
                                     <h2>Atracciones</h2>
@@ -124,7 +127,7 @@
                                     <span class="fs-2 opacity-50">Conocé lugares icónicos del mundo y sé parte de los que vivieron su belleza</span>
                                 </div>
                             </div>
-                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-end">
+                            <div class="col row row-cols-md-2 justify-content-center justify-content-md-end" data-aos="fade-up">
                                 <div class="col-12 col-md-8 --bg-card --bg-card-4 text-light order-md-2 align-content-center text-center">
                                     <span>Vuélvete uno de nuestros</span>
                                     <h2>Socios</h2>
@@ -138,13 +141,13 @@
                 </div>
                 <!-- ad -->
                 <div class="col container banner--hr">
-                    <a href="./pages/atracciones.html" class="row">
+                    <a href="/pages/atracciones.html" class="row">
                         <div class="col-12 col-md-4 text-center align-content-center p-0">
                             <h3 class="text-light"><strong>ahorrá más</strong></h3>
                             <p class="text-light fw-bold">gastá menos</p>
                         </div>
                         <div class="col-12 col-md-8 p-0 banner--bg">
-                            <img src="./assets/img/internal-ads/banner_horizontal-icons.png" alt="" class="banner--hr-sideimage">
+                            <img src="/assets/img/internal-ads/banner_horizontal-icons.png" alt="" class="banner--hr-sideimage">
                         </div>
                     </a>
                 </div>                
@@ -154,11 +157,11 @@
                         <div class="container my-md-4 col-12">
                             <div class="row">
                                 <div class="col-12 col-md-7 text-center text-md-start ps-md-4">
-                                    <img src="../assets/img/icons/tinder.png" alt="" class="primary_icons">
+                                    <img src="/assets/img/icons/tinder.png" alt="" class="primary_icons">
                                     <span class="fs-1 px-3">Top Viajes</span>
                                 </div>
                                 <div class="col-12 col-md-5 text-center text-md-end mt-2">
-                                    <a href="./pages/viajes.html" class="a--hover-pink">ver más viajes</a>
+                                    <a href="/pages/viajes.html" class="a--hover-pink --kf-fade-in-out-infinite">ver más viajes</a>
                                 </div>
                             </div>
                         </div>
@@ -171,25 +174,25 @@
                                     <div class="content__section__card col-12 col-xl-10">
                                         <div class="row row-cols-1 row-cols-md-3 justify-content-center gap-5">
                                             <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
-                                                <img src="../assets/img/section_b_viajes/italia-lago-de-braies.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
-                                                <div >
+                                                <img src="/assets/img/section_b_viajes/italia-lago-de-braies.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
+                                                <div class="col">
                                                     <h4>Viaje a Italia</h4>
                                                 </div>
-                                                <div>
+                                                <div class="col">
                                                     Hoteles Camping y mas
                                                 </div>
-                                                <div>
+                                                <div class="col">
                                                     12% descuento en las proximas 12 horas
                                                 </div>
-                                                <ul class="nav justify-content-evenly">
+                                                <ul class="col nav justify-content-evenly">
                                                     <li class="nav-item row row-cols-auto">
-                                                        <a class="" href="#">Comprar</a>
-                                                        <a href="#">ver comentarios</a>
+                                                        <a href="/pages/viajes.html">Comprar</a>
+                                                        <a href="/pages/viajes.html">ver comentarios</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                                <img src="../assets/img/section_b_viajes/eslovenia-lago-bled.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
+                                                <img src="/assets/img/section_b_viajes/eslovenia-lago-bled.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
                                                 <div class="col">
                                                     <h5>Viaje a Eslovenia</h5>
                                                 </div>
@@ -199,28 +202,28 @@
                                                 <div class="col">
                                                     12% descuento en las próximas (desc.time) horas
                                                 </div>
-                                                <ul class="nav justify-content-evenly">
+                                                <ul class="col nav justify-content-evenly">
                                                     <li class="nav-item row row-cols-auto">
-                                                        <a href="#">Comprar</a>
-                                                        <a href="#">ver comentarios</a>
+                                                        <a href="/pages/viajes.html">Comprar</a>
+                                                        <a href="/pages/viajes.html">ver comentarios</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                                <img src="../assets/img/section_b_viajes/japon-lago-kawaguchi.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
-                                                <div>
+                                                <img src="/assets/img/section_b_viajes/japon-lago-kawaguchi.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
+                                                <div class="col">
                                                     <h5>Viaje a Japón</h5>
                                                 </div>
-                                                <div>
+                                                <div class="col">
                                                     Hoteles Camping y mas
                                                 </div>
-                                                <div>
+                                                <div class="col">
                                                     12% descuento en las proximas 12 horas
                                                 </div>
-                                                <ul class="nav justify-content-evenly">
+                                                <ul class="col nav justify-content-evenly">
                                                     <li class="nav-item row row-cols-auto">
-                                                        <a href="#">Comprar</a>
-                                                        <a href="#">ver comentarios</a>
+                                                        <a href="/pages/viajes.html">Comprar</a>
+                                                        <a href="/pages/viajes.html">ver comentarios</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -230,20 +233,94 @@
                             </div>
                         </div>
                         <div class="col d-flex justify-content-center">
-                            <a href="./pages/viajes.html"><button type="button" class="p-2 btn--pink">Ver más viajes</button></a>
+                            <a href="/pages/contacts.html"><button type="button" class="p-2 btn--pink">Ver más viajes</button></a>
                         </div>
                     </div>
                 </div>
                 <!-- content c -->
-                <div class="col">
-                    a
+                <div class="col d-flex justify-content-center my-3">
+                    <div class="container">
+                        <div class="row row-cols-1 p-3 gap-3 justify-content-center">
+                            <div class="col row row-cols-2 justify-content-end p-0">
+                                <div class="col-10 col-sm-6 --card-comment mt-3">
+                                    <h4 class="--fs-md-sbttl">¿Tenés dudas? Mirá las reseñas de los que ya comenzaron a disfrutar</h4>
+                                </div>
+                                <div class="col-2 col-sm-1 mt-3">
+                                    <img src="./assets/img/account/perfil.png" alt="" style="width: 50px;">
+                                </div>
+                                <div class="col-12 d-flex justify-content-end mt-3">
+                                    <button type="button" class="btn--pink p-2">Reseñas Destacadas</button>
+                                </div>
+                            </div>
+                            <div class="col row row-cols-2 justify-content-start p-0">
+                                <div class="col-10 col-sm-10 mt-3">
+                                    <h4 class="--fs-md-sbttl">¿Todavía no te decidís? ¡Tenemos muchas ofertas para vos!</h4>
+                                </div>
+                                <div class="col-12 justify-content-start mt-3 p-0">
+                                    <a href="./pages/viajes.html" class="p-2 btn--pink">ver todas las ofertas de temporada</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- content d -->
-                <div class="col">d</div>
-                <!-- content e -->
-                <div class="col">e</div>
+                <div class="col">
+                    <div class="container bg--container-pink p-3">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h4>¿Necesitas una mano?</h4>
+                                <p>¡No te pierdas las increíbles ofertas personalizadas de BolsoViajero que tenemos para vos!</p>
+                            </div>
+                            <div class="col">
+                                <form action="submit" class="p-3">
+                                    <label for="floatingInput">Ingrese su Correo Electrónico</label>
+                                    <input type="email" class="form-control mb-2" id="floatingInput" placeholder="abc@email/gmail.com">
+                                    <label for="floatingPassword">¿En qué lo ayudamos?</label>
+                                    <input type="text" class="form-control mb-2" id="floatingPassword" placeholder="¿Tiene preferencias?">
+                                    <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content e / patreon-->
+                <div class="col mt-3 logos --bg-grey">
+                    <div class="slide-logo">
+                        <img src="./assets/img/section_a_home/patreon/arcana.png" alt="">
+                        <img src="./assets/img/section_a_home/patreon/lumino.png" alt="">
+                        <img src="./assets/img/section_a_home/patreon/nexis.png" alt="">
+                        <img src="./assets/img/section_a_home/patreon/solara.png" alt="">
+                        <img src="./assets/img/section_a_home/patreon/zephyr.png" alt="">
+                    </div>
+                    <div class="text-center opacity-50">
+                        <p>@Logos creados mediante Krita 2025. Propietarios o colaboradores a modo de referencia, de igual modo, son ficticios.</p>
+                    </div>
+                </div>
                 <!-- content f -->
-                <div class="col">f</div>
+                <div class="col container">
+                    <div class="row --lightblue p-3">
+                        <div class="col-12 d-flex justify-content-center pb-4">
+                            <h3>¡Encuéntranos en nuestras sucursales!</h3>
+                        </div>
+                        <div class="col-12 col-md-8 justify-content-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105069.16135626983!2d-58.50368368118436!3d-34.61904527580265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737490061895!5m2!1ses!2sar" width="100%" height="400px" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-12 col-md-4 justify-content-center align-content-center">
+                            <ul class="text-center">
+                                <!-- no se como enlazar ubicaciones en maps, calculo que es javascript(? -->
+                                <li class="text-center" data-aos="fade-right"><strong>Caminito</strong><br> Av. El Caminito 1500, La Boca</li>
+                                <hr>
+                                <li class="text-center" data-aos="fade-right"><strong>Plaza de Mayo</strong><br> Av. de Mayo 100, Microcentro</li>
+                                <hr>
+                                <li class="text-center" data-aos="fade-right"><strong>Puerto Madero</strong><br> Calle de la Dársena 300, Puerto Madero</li>
+                                <hr>
+                                <li class="text-center" data-aos="fade-right"><strong>Parque Tres de Febrero</strong><br> Av. del Libertador 5000, Palermo</li>
+                                <hr>
+                                <li class="text-center" data-aos="fade-right"><strong>Teatro Colón</strong><br> Cerrito 620, San Nicolás</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- footer -->
@@ -279,29 +356,29 @@
                     </div>
                     <div class="col my-3">
                         <ul><h5>Mi Cuenta</h5>
-                            <li><a href="../pages/account.html">Beneficios</a></li>
-                            <li><a href="../pages/account.html">Puntos de Viaje</a></li>
-                            <li><a href="../pages/account.html">Problemas</a></li>
-                            <li><a href="../pages/account.html">Cambiar Datos</a></li>
+                            <li><a href="./pages/account.html">Beneficios</a></li>
+                            <li><a href="./pages/account.html">Puntos de Viaje</a></li>
+                            <li><a href="./pages/account.html">Problemas</a></li>
+                            <li><a href="./pages/account.html">Cambiar Datos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3"> 
                         <ul><h5>Términos y Condiciones</h5>
-                            <li><a href="../pages/contacts.html">Términos y Condiciones</a></li>
-                            <li><a href="../pages/contacts.html">Politicas de Privacidad</a></li>
-                            <li><a href="../pages/contacts.html">Como nos manejamos</a></li>
+                            <li><a href="./pages/contacts.html">Términos y Condiciones</a></li>
+                            <li><a href="./pages/contacts.html">Politicas de Privacidad</a></li>
+                            <li><a href="./pages/contacts.html">Como nos manejamos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <ul><h5>En Donde Estamos</h5> 
-                            <li><a href="../pages/contacts.html">Ubicaciones</a></li>
-                            <li><a href="../pages/contacts.html">Servicio Virtual</a></li>
-                            <li><a href="../pages/contacts.html">Horarios</a></li>
+                            <li><a href="./pages/contacts.html">Ubicaciones</a></li>
+                            <li><a href="./pages/contacts.html">Servicio Virtual</a></li>
+                            <li><a href="./pages/contacts.html">Horarios</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <div class="row row-cols-1">
-                            <a href="../pages/contacts.html">
+                            <a href="./pages/contacts.html">
                                 <div class="col">
                                     <span>¡Contactános!</span>
                                 </div>                    
@@ -321,4 +398,6 @@
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>

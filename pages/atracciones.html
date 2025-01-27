@@ -7,16 +7,19 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- animations / animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
 </head>
 <body>
     <!-- sticky icons fixed -->
     <div class="sticky">
-        <button class="btn --fixed-bottom-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
+        <button class="btn --fixed-bottom-right z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="/assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
         <div class="offcanvas offcanvas-end --offcanvas-custom-size" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header bg-black rounded-top">
                 <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">¿En qué podemos ayudarle?</h5>
@@ -32,6 +35,8 @@
             </div>
         </div>
     </div>
+    <!-- body -->
+    <!-- header and intro with bg-img -->
     <div class="body--grid-area">
         <header class="header-area">
             <div class="container-fluid">
@@ -39,15 +44,15 @@
                     <div>
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <img src="../assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
-                                <h3 class="m-1"><a href="../index.html">BolsoViajero</a></h3>
+                                <img src="/assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
+                                <h3 class="m-1"><a href="/index.html">BolsoViajero</a></h3>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="./viajes.html">Viajes</a>
@@ -78,158 +83,159 @@
         <!-- body -->
         <main>
             <div class="container-fluid">
-                <div class="row">
-                    <div></div>
-                    <div class=" col-12 col-md-6 order-md-2 text-center text-md-end p-3">
-                        <img src="../assets/img/primary_icons/logo__bolso-viajero.png" alt="" style="width: 70px;">
-                    </div>  
-                    <div class="col-12 col-md-6 order-md-1 justify-items-center p-3">
-                        <h1>Atracciones</h1>
-                        <span>¡Vive en carne y hueso las maravillas que trae este mundo!</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-flex justify-content-center mt-3">
-                <div class="main__content content--bg container">
-                    <div class="container my-md-4 col-12">
-                        <div class="row">
-                            <div class="col-12 col-md-7 text-center text-md-start">
-                                <img src="../assets/img/icons/tinder.png" alt="" class="primary_icons">
-                                <span class="fs-2 px-3">Destinos para turistas</span>
-                            </div>
-                            <div class="col-12 col-md-5 text-center text-md-end mt-2">
-                                <a href="#">ver más atracciones</a>
-                            </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 row">
+                        <div class="col-12 col-md-6 order-md-2 text-center text-md-end p-3">
+                            <img src="../assets/img/primary_icons/atracciones.png" alt="" style="width: 70px;">
+                        </div>  
+                        <div class="col-12 col-md-6 order-md-1 d-grid justify-content-center p-3">
+                            <h1 class="text-center text-md-start">Atracciones</h1>
+                            <span>¡Vive en carne y hueso las maravillas que trae este mundo!</span>
                         </div>
                     </div>
-                    <div class="col-12 my-md-3">
-                        <div class="container-fluid">
-                            <div class="row py-3">
-                                <div class="col col-xl-2 text-center mx-3 mb-3 mx-md-0 opacity-75 px-md-1">
-                                    <p class="fs-3">¡aprovechá hasta 12 cuotas sin interés en nuestros paquetes de promoción!</p>
+                    <div class="col-12 d-flex justify-content-center mt-3">
+                        <div class="main__content content--bg container">
+                            <div class="container my-md-4 col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-7 text-center text-md-start">
+                                        <img src="../assets/img/icons/tinder.png" alt="" class="primary_icons">
+                                        <span class="fs-2 px-3">Destinos para turistas</span>
+                                    </div>
+                                    <div class="col-12 col-md-5 text-center text-md-end mt-2">
+                                        <a href="#">ver más atracciones</a>
+                                    </div>
                                 </div>
-                                <div class="content__section__card col-12 col-xl-10">
-                                    <div class="row row-cols-1 row-cols-md-3 justify-content-center gap-5">
-                                        <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-uno.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
-                                            <div >
-                                                <h5>Viaje a Francia</h5>
-                                            </div>
-                                            <div>
-                                                Hoteles Camping y mas
-                                            </div>
-                                            <div>
-                                                12% descuento en las proximas 12 horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a class="" href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
+                            </div>
+                            <div class="col-12 my-md-3">
+                                <div class="container-fluid">
+                                    <div class="row py-3">
+                                        <div class="col col-xl-2 text-center mx-3 mb-3 mx-md-0 opacity-75 px-md-1">
+                                            <p class="fs-3">¡aprovechá hasta 12 cuotas sin interés en nuestros paquetes de promoción!</p>
                                         </div>
-                                        <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-dos.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
-                                            <div class="col">
-                                                <h5>Viaje a Italia</h5>
+                                        <div class="content__section__card col-12 col-xl-10">
+                                            <div class="row row-cols-1 row-cols-md-3 justify-content-center gap-5">
+                                                <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-uno.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
+                                                    <div >
+                                                        <h5>Viaje a Francia</h5>
+                                                    </div>
+                                                    <div>
+                                                        Hoteles Camping y mas
+                                                    </div>
+                                                    <div>
+                                                        12% descuento en las proximas 12 horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a class="" href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-dos.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
+                                                    <div class="col">
+                                                        <h5>Viaje a Italia</h5>
+                                                    </div>
+                                                    <div class="col">
+                                                        Hoteles Camping y más
+                                                    </div>
+                                                    <div class="col">
+                                                        12% descuento en las próximas (desc.time) horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-tres.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
+                                                    <div>
+                                                        <h5>Viaje a Disney</h5>
+                                                    </div>
+                                                    <div>
+                                                        Hoteles Camping y mas
+                                                    </div>
+                                                    <div>
+                                                        12% descuento en las proximas 12 horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-cuatro.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
+                                                    <div >
+                                                        <h5>Viaje a China</h5>
+                                                    </div>
+                                                    <div>
+                                                        Hoteles Camping y mas
+                                                    </div>
+                                                    <div>
+                                                        12% descuento en las proximas 12 horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a class="" href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-cinco.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
+                                                    <div class="col">
+                                                        <h5>Viaje a Perú</h5>
+                                                    </div>
+                                                    <div class="col">
+                                                        Hoteles Camping y más
+                                                    </div>
+                                                    <div class="col">
+                                                        12% descuento en las próximas (desc.time) horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
+                                                    <img src="../assets/img/section_d_atracciones/atraccion-seis.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
+                                                    <div>
+                                                        <h5>Viaje a Disney de nuevo? bueno</h5>
+                                                    </div>
+                                                    <div>
+                                                        Hoteles Camping y mas
+                                                    </div>
+                                                    <div>
+                                                        12% descuento en las proximas 12 horas
+                                                    </div>
+                                                    <ul class="nav justify-content-evenly">
+                                                        <li class="nav-item row row-cols-auto">
+                                                            <a href="#">Comprar</a>
+                                                            <a href="#">ver comentarios</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="col">
-                                                Hoteles Camping y más
-                                            </div>
-                                            <div class="col">
-                                                12% descuento en las próximas (desc.time) horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-tres.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
-                                            <div>
-                                                <h5>Viaje a Disney</h5>
-                                            </div>
-                                            <div>
-                                                Hoteles Camping y mas
-                                            </div>
-                                            <div>
-                                                12% descuento en las proximas 12 horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-cuatro.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
-                                            <div >
-                                                <h5>Viaje a China</h5>
-                                            </div>
-                                            <div>
-                                                Hoteles Camping y mas
-                                            </div>
-                                            <div>
-                                                12% descuento en las proximas 12 horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a class="" href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-cinco.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
-                                            <div class="col">
-                                                <h5>Viaje a Perú</h5>
-                                            </div>
-                                            <div class="col">
-                                                Hoteles Camping y más
-                                            </div>
-                                            <div class="col">
-                                                12% descuento en las próximas (desc.time) horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
-                                            <img src="../assets/img/section_d_atracciones/atraccion-seis.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
-                                            <div>
-                                                <h5>Viaje a Disney de nuevo? bueno</h5>
-                                            </div>
-                                            <div>
-                                                Hoteles Camping y mas
-                                            </div>
-                                            <div>
-                                                12% descuento en las proximas 12 horas
-                                            </div>
-                                            <ul class="nav justify-content-evenly">
-                                                <li class="nav-item row row-cols-auto">
-                                                    <a href="#">Comprar</a>
-                                                    <a href="#">ver comentarios</a>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col d-flex justify-content-center">
+                                <a href="./pages/viajes.html"><button type="button" class="p-2 btn--pink">Ver más viajes</button></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <a href="./pages/viajes.html"><button type="button" class="p-2 btn--pink">Ver más viajes</button></a>
                     </div>
                 </div>
             </div>
         </main>
-            <!-- footer -->
+        <!-- footer -->
         <footer>
             <div class="container-fluid">
                 <div class="row text-center row-cols-1 row-cols-md-auto justify-content-md-evenly">
@@ -262,29 +268,29 @@
                     </div>
                     <div class="col my-3">
                         <ul><h5>Mi Cuenta</h5>
-                            <li><a href="../pages/account.html">Beneficios</a></li>
-                            <li><a href="../pages/account.html">Puntos de Viaje</a></li>
-                            <li><a href="../pages/account.html">Problemas</a></li>
-                            <li><a href="../pages/account.html">Cambiar Datos</a></li>
+                            <li><a href="./account.html">Beneficios</a></li>
+                            <li><a href="./account.html">Puntos de Viaje</a></li>
+                            <li><a href="./account.html">Problemas</a></li>
+                            <li><a href="./account.html">Cambiar Datos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3"> 
                         <ul><h5>Términos y Condiciones</h5>
-                            <li><a href="../pages/contacts.html">Términos y Condiciones</a></li>
-                            <li><a href="../pages/contacts.html">Politicas de Privacidad</a></li>
-                            <li><a href="../pages/contacts.html">Como nos manejamos</a></li>
+                            <li><a href="./contacts.html">Términos y Condiciones</a></li>
+                            <li><a href="./contacts.html">Politicas de Privacidad</a></li>
+                            <li><a href="./contacts.html">Como nos manejamos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <ul><h5>En Donde Estamos</h5> 
-                            <li><a href="../pages/contacts.html">Ubicaciones</a></li>
-                            <li><a href="../pages/contacts.html">Servicio Virtual</a></li>
-                            <li><a href="../pages/contacts.html">Horarios</a></li>
+                            <li><a href="./contacts.html">Ubicaciones</a></li>
+                            <li><a href="./contacts.html">Servicio Virtual</a></li>
+                            <li><a href="./contacts.html">Horarios</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <div class="row row-cols-1">
-                            <a href="../pages/contacts.html">
+                            <a href="./contacts.html">
                                 <div class="col">
                                     <span>¡Contactános!</span>
                                 </div>                    
@@ -304,4 +310,6 @@
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>

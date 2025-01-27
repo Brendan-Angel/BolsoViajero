@@ -1,0 +1,32 @@
+/* ANIMATIONS/home */
+
+/* one use per load */
+.--kf-fade-in {
+    opacity: 1;
+    animation: FadeIn 2s;
+}
+@keyframes FadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.--kf-fade-in-delay-2s {
+    opacity: 1;
+    animation: FadeInDelay2s 4s;
+}
+@keyframes FadeInDelay2s {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* infinite / loop */
+.--kf-fade-in-out-infinite {
+    opacity: 0;
+    animation: FadeInOut 2s infinite;
+}
+@keyframes FadeInOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}

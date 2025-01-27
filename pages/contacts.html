@@ -7,16 +7,19 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- animations / animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
 </head>
 <body>
     <!-- sticky icons fixed -->
     <div class="sticky">
-        <button class="btn --fixed-bottom-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
+        <button class="btn --fixed-bottom-right z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="/assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
         <div class="offcanvas offcanvas-end --offcanvas-custom-size" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header bg-black rounded-top">
                 <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">¿En qué podemos ayudarle?</h5>
@@ -32,6 +35,8 @@
             </div>
         </div>
     </div>
+    <!-- body -->
+    <!-- header and intro with bg-img -->
     <div class="body--grid-area">
         <header class="header-area">
             <div class="container-fluid">
@@ -39,15 +44,15 @@
                     <div>
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <img src="../assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
-                                <h3 class="m-1"><a href="../index.html">BolsoViajero</a></h3>
+                                <img src="/assets/img/primary_icons/logo__bolso-viajero.png" alt="Logo BolsoViajero" class="primary_icons">
+                                <h3 class="m-1"><a href="/index.html">BolsoViajero</a></h3>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="./viajes.html">Viajes</a>
@@ -77,17 +82,131 @@
         </header>
         <!-- body -->
         <main>
+            <div class="container-fluid">
+                <div class="row row-cols-1 p-3 mb-4 --bg-pink">
+                    <div class="col d-flex justify-content-center py-3 p-0">
+                        <h3 class="text-light fs-1">¿En qué te ayudamos?</h3>
+                    </div>
+                    <div class="col">
+                        <form class="d-flex" role="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
+                                <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"/>
+                            </svg>
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container --bg-pink mb-3 py-2">
+                <div class="row m-0">
+                    <div class="col-12 col-lg-8 row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <h2>Contáctanos</h2>
+                        </div>
+                        <div class="col-12 row row-cols-auto m-0 p-0">
+                            <div class="col py-2 ps-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-telephone d-inline" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                                <p class="d-inline"><strong>(555) 123-4567</strong></p>
+                            </div>
+                            <div class="col py-2 ps-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-whatsapp d-inline" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                </svg>
+                                <p class="d-inline"><strong>+54 9 11 2345 6789</strong></p>
+                            </div>
+                            <div class="col py-2 ps-3 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-envelope d-inline text-center" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                                <p class="d-inline"><strong>bolsoviajerosupport@gmail.com</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="col-12 d-flex justify-content-center">
+                             <h2>Horarios</h2>
+                        </div>
+                         <div class="col-12 d-flex justify-content-center">
+                            <p>Lunes a Viernes de 8 a 18 hrs</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col row row-cols-md-2 py-3">
+                        <div class="col-12 col-sm-8">
+                            <h4>¡Síguenos en nuestras redes sociales!</h4>
+                            <div class="d-inline d-flex justify-content-center justify-content-md-start gap-3">
+                                <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/?lang=es" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                    </svg>
+                                </a>        
+                            </div>
+                        </div>
+                        <div class="col-sm-4 d-flex justify-content-end">
+                            <img src="../assets/img/contacts/llamada-telefonica.png" alt="" class="display--none-md" style="width: 70px; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center pb-4">
+                        <h3>¡Encuéntranos en nuestras sucursales!</h3>
+                    </div>
+                    <div class="col-12 col-md-8 justify-content-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105069.16135626983!2d-58.50368368118436!3d-34.61904527580265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737490061895!5m2!1ses!2sar" width="100%" height="400px" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-md-4 justify-content-center align-content-center">
+                        <ul class="text-center">
+                            <!-- no se como enlazar ubicaciones en maps, calculo que es javascript(? -->
+                            <li class="text-center"><strong>Caminito</strong><br> Av. El Caminito 1500, La Boca</li>
+                            <hr>
+                            <li class="text-center"><strong>Plaza de Mayo</strong><br> Av. de Mayo 100, Microcentro</li>
+                            <hr>
+                            <li class="text-center"><strong>Puerto Madero</strong><br> Calle de la Dársena 300, Puerto Madero</li>
+                            <hr>
+                            <li class="text-center"><strong>Parque Tres de Febrero</strong><br> Av. del Libertador 5000, Palermo</li>
+                            <hr>
+                            <li class="text-center"><strong>Teatro Colón</strong><br> Cerrito 620, San Nicolás</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row mt-3">
-                    <h1>¿Quienes somos?</h1>
-                    <p>En un mundo donde el deseo de viajar a menudo se ve limitado por el presupuesto, Bolsoviajero emerge como una solución innovadora y accesible. Fundada en 2025, nuestra empresa se especializa en ofrecer experiencias de viaje que combinan calidad y precios económicos, permitiendo que todos puedan explorar nuevos destinos sin comprometer su experiencia.
-                    <br>
-                    Nuestro enfoque se centra en crear itinerarios personalizados que responden a las necesidades y preferencias de cada viajero. Desde escapadas cortas hasta grandes aventuras, en Bolsoviajero nos esforzamos por ofrecer opciones de viaje que se ajusten a cada bolsillo sin sacrificar la calidad del servicio.
-                    <br>
-                    A través de alianzas con proveedores locales y una atención al cliente excepcional, garantizamos que nuestras ofertas sean no solo convenientes, sino también enriquecedoras. En Bolsoviajero, creemos firmemente que viajar debería ser una experiencia accesible para todos, y nuestra misión es derribar las barreras económicas para que cada persona pueda vivir la aventura de su vida.</p>
+                    <div class="col">
+                        <h1>¿Quienes somos?</h1>
+                        <p>En un mundo donde el deseo de viajar a menudo se ve limitado por el presupuesto, Bolsoviajero emerge como una solución innovadora y accesible. Fundada en 2025, nuestra empresa se especializa en ofrecer experiencias de viaje que combinan calidad y precios económicos, permitiendo que todos puedan explorar nuevos destinos sin comprometer su experiencia.
+                        <br>
+                        Nuestro enfoque se centra en crear itinerarios personalizados que responden a las necesidades y preferencias de cada viajero. Desde escapadas cortas hasta grandes aventuras, en Bolsoviajero nos esforzamos por ofrecer opciones de viaje que se ajusten a cada bolsillo sin sacrificar la calidad del servicio.
+                        <br>
+                        A través de alianzas con proveedores locales y una atención al cliente excepcional, garantizamos que nuestras ofertas sean no solo convenientes, sino también enriquecedoras. En Bolsoviajero, creemos firmemente que viajar debería ser una experiencia accesible para todos, y nuestra misión es derribar las barreras económicas para que cada persona pueda vivir la aventura de su vida.</p>
+                    </div>
                 </div>
             </div>
         </main>
+        <!-- footer -->
         <footer>
             <div class="container-fluid">
                 <div class="row text-center row-cols-1 row-cols-md-auto justify-content-md-evenly">
@@ -120,29 +239,29 @@
                     </div>
                     <div class="col my-3">
                         <ul><h5>Mi Cuenta</h5>
-                            <li><a href="../pages/account.html">Beneficios</a></li>
-                            <li><a href="../pages/account.html">Puntos de Viaje</a></li>
-                            <li><a href="../pages/account.html">Problemas</a></li>
-                            <li><a href="../pages/account.html">Cambiar Datos</a></li>
+                            <li><a href="./account.html">Beneficios</a></li>
+                            <li><a href="./account.html">Puntos de Viaje</a></li>
+                            <li><a href="./account.html">Problemas</a></li>
+                            <li><a href="./account.html">Cambiar Datos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3"> 
                         <ul><h5>Términos y Condiciones</h5>
-                            <li><a href="../pages/contacts.html">Términos y Condiciones</a></li>
-                            <li><a href="../pages/contacts.html">Politicas de Privacidad</a></li>
-                            <li><a href="../pages/contacts.html">Como nos manejamos</a></li>
+                            <li><a href="./contacts.html">Términos y Condiciones</a></li>
+                            <li><a href="./contacts.html">Politicas de Privacidad</a></li>
+                            <li><a href="./contacts.html">Como nos manejamos</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <ul><h5>En Donde Estamos</h5> 
-                            <li><a href="../pages/contacts.html">Ubicaciones</a></li>
-                            <li><a href="../pages/contacts.html">Servicio Virtual</a></li>
-                            <li><a href="../pages/contacts.html">Horarios</a></li>
+                            <li><a href="./contacts.html">Ubicaciones</a></li>
+                            <li><a href="./contacts.html">Servicio Virtual</a></li>
+                            <li><a href="./contacts.html">Horarios</a></li>
                         </ul>
                     </div>
                     <div class="col my-3">
                         <div class="row row-cols-1">
-                            <a href="../pages/contacts.html">
+                            <a href="./contacts.html">
                                 <div class="col">
                                     <span>¡Contactános!</span>
                                 </div>                    
@@ -162,4 +281,6 @@
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>

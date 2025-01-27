@@ -1,0 +1,130 @@
+@import 'sass/variables';
+@import 'sass/body-grid';
+@import 'sass/header';
+@import 'sass/main';
+@import 'sass/home';
+@import 'sass/viajes';
+@import 'sass/account';
+@import 'sass/contacts';
+@import 'sass/ads';
+@import 'sass/footer';
+@import 'sass/animations';
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* general */
+
+body {
+    display: relative;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(247, 129, 168);
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: rgb(255, 255, 255);
+
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+.icon-card {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+@media (min-width: 768px) {
+    .icon-card {
+        width: 50px;
+    }
+}
+
+/* colors */
+/* agregar mas tarde variables */
+
+.--lightblue {
+    background-color: $lighter-lightblue;
+}
+
+.bg--container-pink {
+    background-color: rgb(185, 207, 214);
+}
+
+.--bg-grey {
+    background-color: #dddddd;
+}
+
+.--bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg--yellow {
+    background-color: $yellow;
+}
+
+/* query */
+@media (min-width: 769px) {
+    .aside--sm-hidden {
+        display: block;
+    }
+
+    .sticky-icons--size {
+        width: 80px;
+        height: auto;
+    }
+    
+    .--offcanvas-custom-size {
+        border-radius: 30px;
+        height: 97%;
+        margin: 1% 2%;
+    }
+
+    .header-intro--grid {
+        height: 700px;
+    }
+    
+    .primary_icons {
+        width: 55px;
+    }
+
+    .--bg-card {
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .--bg-card:hover {
+        width: 430px;
+        height: 430px;
+        transition: width 1s, height 1s;
+    }
+    .--bg-card h2 {
+        font-size: 55px;
+    }
+}
+
+/* display none/@query's */
+
+.display--none-md {
+    display: none;
+}
+@media (min-width: 768px) {
+    .display--none-md {
+        display: block;
+    }
+}
