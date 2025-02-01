@@ -2,6 +2,12 @@
 /* paleta de colores que me gustan */
 /* body */
 /* sticky */
+.--fixed-bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 .sticky-icons--size {
   width: 60px;
   height: auto;
@@ -199,6 +205,7 @@ footer {
   height: 500px;
   object-fit: cover;
   object-position: center;
+  filter: brightness(60%);
 }
 
 .control--size {
@@ -208,22 +215,47 @@ footer {
 
 .comment--style {
   width: 90%;
-  height: 50%;
+  height: 45%;
   display: flex;
   justify-content: center;
   background-color: #ebebeb;
   border: 1 solid grey;
   border-radius: 10px;
 }
+.comment--style p {
+  margin: 0%;
+  padding: 0%;
+}
 
 /* account */
-.aside--sm-hidden {
-  display: none;
+.button--custom {
+  width: 100%;
+  padding: 0%;
+  margin: 1rem 0%;
 }
 
 .account__aside--custom {
+  border-radius: 10px;
+}
+
+.account__aside--custom, .account__aside--custom-right, .account__aside--custom-left {
   background-color: rgb(218, 130, 191);
   border: 2px solid rgb(202, 124, 177);
+}
+
+@media (min-width: 768px) {
+  .account__aside--custom-left {
+    border-radius: 10px 0px 0px 10px;
+  }
+  .account__aside--custom-right {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+.card--custom-left {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card--custom-right {
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -377,6 +409,10 @@ ul {
 
 .--bg-grey {
   background-color: #dddddd;
+}
+
+.--bg-dark-grey {
+  background-color: #303030;
 }
 
 .bg--yellow {

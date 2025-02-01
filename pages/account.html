@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BolsoViajero</title>
+    <title>BolsoViajero | Cuenta</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
@@ -52,30 +52,35 @@
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-                                        <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="./viajes.html">Viajes</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="./hoteles.html">Hoteles</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="./atracciones.html">Atracciones</a>
-                                        </li>
-        
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./contacts.html">Contacto</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="./account.html">Iniciar Sesión</a></li>
-                                        </ul>
-                                        </li>
-                                    </ul>
+                                <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+                                    <div class="row row-cols-1 row-cols-lg-2">
+                                        <div class="col-12 col-lg-8">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" aria-current="page" href="../index.html">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" href="./viajes.html">Viajes</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" href="./alquileres.html">Alquileres</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" href="./atracciones.html">Atracciones</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-4 justify-content-md-end">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" href="./contacts.html">Contacto</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-center" href="./account.html">Cuenta</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -84,28 +89,218 @@
             </div>
         </header>
         <!-- body -->
-        <div class="container my-5 main align-content-center">
-            <div class="row p-md-5">
-                <aside class="aside--sm-hidden col-md-6 account__aside--custom text-center align-content-center">
-                    <h2 class="text-light">Iniciar Sesión</h2>
-                </aside>
-                <main class="col-12 col-md-6 card p-3 p-md-5">
-                    <form action="/submit" method="post" class="row-cols-1">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" id="nombre">
-            
-                        <label for="correo">Correo Electrónico:</label>
-                        <input type="email" name="correo-electronico" id="correo">
-            
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" name="contraseña" id="contraseña">
-    
-                        <input type="submit" value="Enviar" class="btn btn-secondary">
-                    </form>
-                    <div class="col"></div>
-                </main>
+        <main class="container-fluid py-5 main align-content-center">
+            <div class="row d-grid gap-3">
+                <div class="col-12 d-md-none">
+                    <div class="row row-cols-1">
+                        <div class="col-12">
+                        <!-- access via facebook -->
+                            <nav class="navbar-expand-lg">
+                                <div class="container-fluid p-0">
+                                    <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFacebook" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="col-12 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Acceder via Facebook</h2>
+                                        </div>
+                                    </button>
+                                    <div class="collapse navbar-collapse container-fluid" id="navbarFacebook">
+                                        <div class="col-12 card p-3">
+                                            <p>¡Estamos renovando! Por favor, utilice otro método. Disculpe las molestias</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-12">
+                        <!-- access via google -->
+                            <nav class="navbar-expand-lg">
+                                <div class="container-fluid p-0">
+                                    <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGoogle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="col-12 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Acceder via Google</h2>
+                                        </div>
+                                    </button>
+                                    <div class="collapse navbar-collapse container-fluid" id="navbarGoogle">
+                                        <div class="col-12 card p-3">
+                                            <p>¡Estamos renovando! Por favor, utilice otro método. Disculpe las molestias</p>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-12">
+                        <!-- access via account-->
+                            <nav class="navbar-expand-lg">
+                                <div class="container-fluid p-0">
+                                    <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIniciarSesion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="col-12 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Iniciar Sesión</h2>
+                                        </div>
+                                    </button>
+                                    <div class="collapse navbar-collapse container-fluid" id="navbarIniciarSesion">
+                                        <div class="row row-cols-1">
+                                            <div class="col-12 card p-3">
+                                                <form action="/submit" method="post" class="d-grid gap-1">
+                                                    <label for="nombre"><img src="../assets/img/icons/acceso (1).png" alt="" style="width: 1rem;"> Nombre y Apellido:</label>
+                                                    <input type="text" name="nombre" id="nombre">
+                                        
+                                                    <label for="correo"><img src="../assets/img/icons/correo.png" alt="" style="width: 1rem;"> Correo Electrónico:</label>
+                                                    <input type="email" name="correo-electronico" id="correo" placeholder="abc@email/gmail.com">
+                                        
+                                                    <label for="contraseña"><img src="../assets/img/icons/contrasena.png" alt="" style="width: 1rem;"> Contraseña:</label>
+                                                    <input type="password" name="contraseña" id="contraseña">
+                                
+                                                    <input type="submit" value="Enviar" class="btn btn-secondary my-4">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-12">
+                        <!-- register -->
+                            <nav class="navbar-expand-lg">
+                                <div class="container-fluid p-0">
+                                    <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRegister" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="col-12 col-md-6 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Registrarse</h2>
+                                        </div>
+                                    </button>
+                                    <div class="collapse navbar-collapse container-fluid" id="navbarRegister">
+                                        <div class="row row-cols-1">
+                                            <div class="col-12 card p-3 p-md-4">
+                                                <form action="/submit" method="post" class="d-grid gap-1">
+                                                    <label for="nombre"><img src="../assets/img/icons/acceso (1).png" alt="" style="width: 1rem;"> Nombre y Apellido:</label>
+                                                    <input type="text" name="nombre" id="nombre">
+                                        
+                                                    <label for="correo"><img src="../assets/img/icons/correo.png" alt="" style="width: 1rem;"> Correo Electrónico:</label>
+                                                    <input type="email" name="correo-electronico" id="correo" placeholder="abc@email/gmail.com">
+                                        
+                                                    <label for="contraseña"><img src="../assets/img/icons/contrasena.png" alt="" style="width: 1rem;"> Contraseña</label>
+                                                    <input type="password" name="contraseña" id="contraseña">
+                        
+                                                    <label for="confirmar-contraseña">Confirma tu Contraseña</label>
+                                                    <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Repite tu contraseña aquí">
+                                
+                                                    <input type="submit" value="Enviar" class="btn btn-secondary my-4">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+<!-- reconocer el problema de acá, no me deja establecerlo como a los originales de version pc. de momento, será así. supongo que necesito de js un poco o leer la documentacion de bs -->
+                <div class="col-12 d-grid gap-3 d-none d-md-block">
+                    <!-- access via Facebook (pc)-->
+                    <div class="container-md p-0">
+                        <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFacebook" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="col-12 account__aside--custom text-center align-content-center">
+                                <h2 class="text-light">Acceder via Facebook</h2>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse container-fluid" id="navbarFacebook">
+                            <div class="col-12 card p-3">
+                                <p>¡Estamos renovando! Por favor, utilice otro método. Disculpe las molestias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- access via Google (pc) -->
+                    <div class="container-md p-0">
+                        <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGoogle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="col-12 account__aside--custom text-center align-content-center">
+                                <h2 class="text-light">Acceder via Google</h2>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse container-fluid" id="navbarGoogle">
+                            <div class="col-12 card p-3">
+                                <p>¡Estamos renovando! Por favor, utilice otro método. Disculpe las molestias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iniciar sesión (pc) -->
+                    <div class="container-md my-3 p-0">
+                        <div class="col-12 d-grid gap-3 d-none d-md-block">
+                            <div class="container-fluid p-0">
+                                <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIniciarSesionPC" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <div class="col-12 account__aside--custom text-center align-content-center">
+                                        <h2 class="text-light">Iniciar Sesión</h2>
+                                    </div>
+                                </button>
+                                <div class="collapse navbar-collapse container-fluid" id="navbarIniciarSesionPC">
+                                    <div class="row row-cols-2">
+                                        <div class="col-6 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Iniciar Sesión</h2>
+                                            <div class="p-1">
+                                                <img src="../assets/img/account/empresario.png" alt="perfil ficticio 1">
+                                                <img src="../assets/img/account/hombre.png" alt="perfil ficticio 2">
+                                                <img src="../assets/img/account/perfil.png" alt="perfil ficticio 3">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 card card--custom-left p-3 p-md-4">
+                                            <form action="/submit" method="post" class="d-grid gap-1">
+                                                <label for="nombre"><img src="../assets/img/icons/acceso (1).png" alt="" style="width: 1rem;"> Nombre y Apellido:</label>
+                                                <input type="text" name="nombre" id="nombre">
+                                    
+                                                <label for="correo"><img src="../assets/img/icons/correo.png" alt="" style="width: 1rem;"> Correo Electrónico:</label>
+                                                <input type="email" name="correo-electronico" id="correo" placeholder="abc@email/gmail.com">
+                                    
+                                                <label for="contraseña"><img src="../assets/img/icons/contrasena.png" alt="" style="width: 1rem;"> Contraseña:</label>
+                                                <input type="password" name="contraseña" id="contraseña">
+                            
+                                                <input type="submit" value="Enviar" class="btn btn-secondary my-4">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- registrarse (pc) -->
+                    <div class="container-md my-3 p-0">
+                        <div class="col-12 d-grid gap-3 d-none d-md-block">
+                            <div class="container-fluid p-0">
+                                <button class="navbar navbar-toggler button--custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRegisterPC" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <div class="col-12 account__aside--custom text-center align-content-center">
+                                        <h2 class="text-light">Registrarse</h2>
+                                    </div>
+                                </button>
+                                <div class="collapse navbar-collapse container-fluid" id="navbarRegisterPC">
+                                    <div class="row row-cols-2">
+                                        <div class="order-2 col-6 account__aside--custom-left text-center align-content-center">
+                                            <h2 class="text-light">Registrarse</h2>
+                                            <div class="p-1">
+                                                <img src="../assets/img/icons/mas.png" alt="signo de más">
+                                                <img src="../assets/img/account/hombre.png" alt="perfil ficticio 1">
+                                            </div>
+                                        </div>
+                                        <div class="order-1 col-6 card card--custom-right p-3 p-md-4">
+                                            <form action="/submit" method="post" class="d-grid gap-1">
+                                                <label for="nombre"><img src="../assets/img/icons/acceso (1).png" alt="" style="width: 1rem;"> Nombre y Apellido:</label>
+                                                <input type="text" name="nombre" id="nombre">
+                                    
+                                                <label for="correo"><img src="../assets/img/icons/correo.png" alt="" style="width: 1rem;"> Correo Electrónico:</label>
+                                                <input type="email" name="correo-electronico" id="correo" placeholder="abc@email/gmail.com">
+                                    
+                                                <label for="contraseña"><img src="../assets/img/icons/contrasena.png" alt="" style="width: 1rem;"> Contraseña</label>
+                                                <input type="password" name="contraseña" id="contraseña">
+                    
+                                                <label for="confirmar-contraseña">Confirma tu Contraseña</label>
+                                                <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Repite tu contraseña aquí">
+                            
+                                                <input type="submit" value="Enviar" class="btn btn-secondary my-4">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
         <!-- footer -->
         <footer>
             <div class="container-fluid">
