@@ -42,7 +42,7 @@
 .header-intro--grid {
   grid-area: header;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../assets/img/section_a_home/intro.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/intro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,19 +138,19 @@ footer {
 /* content-one */
 /* no recuerdo como usar imagenes de fondo (arreglar después) */
 .--bg-card-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../assets/img/section_a_home/content-one/viajes.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/viajes.jpg);
 }
 
 .--bg-card-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../assets/img/section_a_home/content-one/hotel.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/hotel.jpg);
 }
 
 .--bg-card-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../assets/img/section_a_home/content-one/carousel.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/carousel.jpg);
 }
 
 .--bg-card-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../../assets/img/section_a_home/content-one/socio.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../assets/img/section_a_home/content-one/socio.jpg);
 }
 
 .--bg-card {
@@ -408,7 +408,7 @@ ul {
 }
 
 .banner--bg {
-  background-image: url(../../assets/img/internal-ads/banner_horizontal-bg.png);
+  background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
   background-size: cover;
   background-position: right;
 }
@@ -421,7 +421,7 @@ ul {
 
 @media (min-width: 768px) {
   .banner--bg {
-    background-image: url(../../assets/img/internal-ads/banner_horizontal-bg.png);
+    background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
