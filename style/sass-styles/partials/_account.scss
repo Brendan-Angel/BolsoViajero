@@ -1,15 +1,12 @@
 /* account */
-
 .button--custom {
     width: 100%;
     padding: 0%;
     margin: 1rem 0%;
 }
-
 .account__aside--custom {
     border-radius: 10px;
 }
-
 .account__aside--custom , .account__aside--custom-right, .account__aside--custom-left {
     background-color: rgb(218, 130, 191);
     border: 2px solid rgb(202, 124, 177);
@@ -21,13 +18,10 @@
     .account__aside--custom-right {
         border-radius: 0px 10px 10px 0px;
     }
-
 }
-
 .card--custom-left {
     border-radius: 0px 10px 10px 0px;
 }
-
 .card--custom-right {
     border-radius: 10px 0px 0px 10px;
 }

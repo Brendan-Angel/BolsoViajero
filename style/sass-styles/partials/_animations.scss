@@ -1,5 +1,4 @@
 /* ANIMATIONS/home */
-
 /* one use per load */
 .--kf-fade-in {
     opacity: 1;
@@ -9,7 +8,6 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 .--kf-fade-in-delay-2s {
     opacity: 1;
     animation: FadeInDelay2s 4s;
@@ -19,7 +17,6 @@
     50% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 /* infinite / loop */
 .--kf-fade-in-out-infinite {
     opacity: 0;

@@ -1,0 +1,27 @@
+/* paleta de colores que me gustan */
+$white: #ebebeb;
+$dark-grey: #303030;
+$darker-pink: #a157a6;
+$dark-pink: #e6f2ff;
+$marine-blue: #222a3b;
+$dark-blue: #152f45;
+$lightblue: #3e6d8a;
+$lighter-lightblue: #c1dee8;
+$yellow: #eeda81;
+$yellow-mustard: #b49f42;
+
+/* mixins */
+@mixin card-style ($width, $height, $border-radius, $bg-color, $box-shadow) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  box-shadow: $box-shadow;
+}
+
+/* extends */
+.button-pink-preset {
+    background-color: #fff0f7;
+    border: 2px solid #ffbae4;
+    border-radius: 20px;
+}

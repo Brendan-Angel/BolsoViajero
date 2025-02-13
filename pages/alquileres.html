@@ -5,10 +5,11 @@
     <title>BolsoViajero | Alquileres</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="alojamientos, alquileres, hoteles, cabañas, departamentos">
+    <link rel="shortcut icon" href="../assets/img/primary_icons/logo__bolso-viajero.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../style/css-styles/style.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,21 +21,74 @@
 <body>
     <!-- sticky icons fixed -->
     <div class="sticky">
-        <button class="btn --fixed-bottom-right z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../assets/img/primary_icons/servicio-al-cliente.png" alt="" class="sticky-icons--size"></button>
+        <button class="btn --fixed-bottom-right z-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="/assets/img/primary_icons/servicio-al-cliente.png" alt="icono interactivo de servicio al cliente" class="sticky-icons--size"></button>
         <div class="offcanvas offcanvas-end --offcanvas-custom-size" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header bg-dark rounded-top">
+            <div class="offcanvas-header bg-dark rounded-md-top">
                 <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">¿En qué podemos ayudarle?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div>
-                    <p class="fs-3"><strong>offcanvas de prueba</strong>
-                        <br>
-                        ¡aún seguímos en remodelación!
-                    </p>
-                    <button type="button" class="btn btn-secondary">si</button>
-                    <button type="button" class="btn btn-secondary">no</button>
-                    <p class="fs-5">no sirve jajaj acá deberia haber conversacion chatbot o con servicio técnico</p>
+                <div class="container-fluid">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <p class="fs-3 text-center mb-1"><strong>Servicio al Cliente</strong></p>
+                        </div>
+                        <hr>
+                        <div class="col display-inline-custom mb-3">
+                            <div class="mx-0 mx-md-2">
+                                <label for="buscador" id="search-label">
+                                    <input type="search" class="search--custom" name="buscador" id="buscador" placeholder=" ¿En qué te ayudamos?">
+                                </label>
+                            </div>
+                            <button type="submit" class="search-button--custom">Buscar</button>
+                        </div>
+                        <hr>
+                        <div class="col p-0">
+                            <div class="container">
+                                <div class="row border-radius">
+                                    <div class="chat-service p-0">
+                                        <div class="chat-info px-2 d-flex justify-content-between align-content-center">
+                                            <div class="chatbot-icon d-none d-sm-block m-1">
+                                                <img src="/assets/img/icons/chatbot/hastune-miku-icon.png" alt="perfil de hatsune miku">
+                                            </div>
+                                            <div>
+                                                <span class="mb-1 fs-5">Yin: <small>Asistente Virtual</small></span>
+                                                <p class="m-0"><small>"aún en modelación..."</small></p>
+                                            </div>
+                                            <div class="d-inline-flex">
+                                                <span class="--kf-fade-in-out-infinite"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="lightgreen" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                                  </svg></span>
+                                                <p>En línea</p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-panel container-fluid p-0">
+                                            <div class="row-cols-2 p-2">
+                                                <div class="chatbot-message col-9 p-2 my-2">
+                                                    <p>Bienvenido a Servicio al cliente, soy Yin, tu asistente virtual. ¡Como Hatsune Miku, sólo que en vez de cantar, te ayudaré en tus problemas como en tu cuenta, tus viajes, devoluciones y lo que se le pueda ocurrir aquí!</p>
+                                                </div>
+                                                <div class="client-message col-11 justify-content-end p-2 my-2">
+                                                    <p>¿Qué quieres preguntar?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-input container-fluid">
+                                            <div class="row row-cols-2 p-1">
+                                                <div class="col-10 p-0 m-0">
+                                                    <label for="client-comment">
+                                                        <input type="text" name="client-comment" id="client-comment" placeholder="Digame, ¿en qué lo ayudo?" class="client-comment--custom">
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <button type="button" class="btn-enter--custom"> > </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,7 +166,6 @@
                                 <div class="container my-md-4 col-12">
                                     <div class="row">
                                         <div class="col-12 col-md-8 text-center text-md-start ps-md-4">
-                                            <img src="../assets/img/icons/tinder.png" alt="" class="primary_icons">
                                             <span class="fs-1 px-3">Alojamientos de excelencia por calidad y precio</span>
                                         </div>
                                         <div class="col-12 col-md-4 text-center text-md-end mt-2">
@@ -130,13 +183,13 @@
                                                 <div class="row row-cols-1 row-cols-md-3 justify-content-center gap-5">
                                                     <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
                                                         <img src="../assets/img/section_c_hoteles/hotel-uno.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
-                                                        <div class="my-0">
-                                                            <h4>Hotel MardelFiaca</h4>
-                                                            <p>6 dias, 5 noches</p>
-                                                        </div>
-                                                        <div>
-                                                            <p class="fs-5">Distintos Hoteles a lo largo de Mar del Plata</p>
-                                                            <p>Incluye: Desayuno, Cena</p>
+                                                        <div class="col my-0">
+                                                            <h4>Hotel MarDelFiaca</h4>
+                                                            <span><small>Valor por noche:</small></span>
+                                                            <p class="m-0"><strong>$53,900</strong> pesos argentinos</p>
+                                                            <hr class="my-2">
+                                                            <p class="m-0">Incluye: Desayuno, Cena</p>
+                                                            <p><small>Distintos Hoteles a lo largo de Mar del Plata</small></p>
                                                         </div>
                                                         <ul class="nav justify-content-evenly">
                                                             <li class="nav-item row row-cols-auto">
@@ -147,13 +200,13 @@
                                                     </div>
                                                     <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
                                                         <img src="../assets/img/section_c_hoteles/hotel-dos.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
-                                                        <div>
+                                                        <div class="col my-0">
                                                             <h4>Cabañas MiamiVerdocin</h4>
-                                                            <p>5 dias, 4 noches</p>
-                                                        </div>
-                                                        <div>
-                                                            <p class="fs-5">Resort privado con piscina incluida</p>
-                                                            <p>Incluye: Desayuno</p>
+                                                            <span><small>Valor por noche:</small></span>
+                                                            <p class="m-0"><strong>$115,500</strong> pesos argentinos</p>
+                                                            <hr class="my-2">
+                                                            <p class="m-0">Incluye: Desayuno</p>
+                                                            <p><small>Resort privado con piscina incluida</small></p>
                                                         </div>
                                                         <ul class="nav justify-content-evenly">
                                                             <li class="nav-item row row-cols-auto">
@@ -164,13 +217,13 @@
                                                     </div>
                                                     <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
                                                         <img src="../assets/img/section_c_hoteles/hotel-tres.jpg" alt="Lago Kawaguchi, Japón" class="--card-img p-0">
-                                                        <div>
+                                                        <div class="col my-0">
                                                             <h4>Departamentos LaNieveEsBlanca</h4>
-                                                            <p>6 dias, 5 noches</p>
-                                                        </div>
-                                                        <div>
-                                                            <p class="fs-5">Grupo de departamentos sobre Bariloche</p>
-                                                            <p>Incluye: Nada </p>
+                                                            <span><small>Valor por noche:</small></span>
+                                                            <p class="m-0"><strong>$61,600</strong> pesos argentinos</p>
+                                                            <hr class="my-2">
+                                                            <p class="m-0">Incluye: Nada</p>
+                                                            <p><small>Grupo de departamentos sobre Bariloche</small></p>
                                                         </div>
                                                         <ul class="nav justify-content-evenly">
                                                             <li class="nav-item row row-cols-auto">
@@ -181,12 +234,13 @@
                                                     </div>
                                                     <div class="row row-cols-1 col-12 col-md-4 --card-size p-0">
                                                         <img src="../assets/img/section_c_hoteles/hotel-cuatro.jpg" alt="Lago de Braies, Italia" class="--card-img p-0">
-                                                        <div>
-                                                            <h3>Hotel CartónVintage</h3>
-                                                        </div>
-                                                        <div>
-                                                            <p class="fs-5">Hotel sobre avenida de Springfield</p>
-                                                            <p>Incluye: Desayuno, Almuerzo y Cena</p>
+                                                        <div class="col my-0">
+                                                            <h4>Hotel CartónVintage</h4>
+                                                            <span><small>Valor por noche:</small></span>
+                                                            <p class="m-0"><strong>46,200</strong> pesos argentinos</p>
+                                                            <hr class="my-2">
+                                                            <p class="m-0">Incluye: Desayuno, Almuerzo y Cena</p>
+                                                            <p><small>Hotel sobre avenida de Springfield</small></p>
                                                         </div>
                                                         <ul class="nav justify-content-evenly">
                                                             <li class="nav-item row row-cols-auto">
@@ -197,13 +251,14 @@
                                                     </div>
                                                     <div class="row col-12 row-cols-1 col-md-4 --card-size p-0">
                                                         <img src="../assets/img/section_c_hoteles/hotel-cinco.jpg" alt="Lago Bled, Eslovenia" class="--card-img p-0">
-                                                        <div>
-                                                            <h3>Cabañas CervesitaMañanera</h3>
-                                                        </div>
-                                                        <div>
-                                                            <p class="fs-5">Cabañas barrileras en camping cerca del Río Colorado</p>
-                                                            <p>Incluye: Desayuno, Cena</p>
-                                                        </div>
+                                                        <div class="col my-0">
+                                                            <h4>Cabañas CervesitaMañanera</h4>
+                                                            <span><small>Valor por noche:</small></span>
+                                                            <p class="m-0"><strong>$58,600</strong> pesos argentinos</p>
+                                                            <hr class="my-2">
+                                                            <p class="m-0">Incluye: Desayuno, Cena</p>
+                                                            <p><small>Cabañas barrileras en camping cerca del Río Colorado</small></p>
+                                                        </div>    
                                                         <ul class="nav justify-content-evenly">
                                                             <li class="nav-item row row-cols-auto">
                                                                 <a class="" href="#">Comprar</a>

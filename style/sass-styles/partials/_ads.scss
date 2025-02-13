@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .banner--bg {
-    background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
+    background-image: url(/assets/img/internal-ads/banner_horizontal-bg.png);
     background-size: cover;
     background-position: right;
 }
@@ -15,10 +15,9 @@
     height: 105px;
     object-fit: cover;
 }
-
 @media (min-width: 768px) {
     .banner--bg {
-        background-image: url(../assets/img/internal-ads/banner_horizontal-bg.png);
+        background-image: url(/assets/img/internal-ads/banner_horizontal-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
