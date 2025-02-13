@@ -1,24 +1,20 @@
 /* body */
     /* sticky */
-
     .--fixed-bottom-right {
         position: absolute;
         bottom: 10px;
         right: 10px;
     }
-
     .sticky-icons--size {
         width: 60px;
         height: auto;
     }
-    
     .--fixed-bottom-right {
         position: fixed; 
         right: 5px;
         bottom: 20px;
     }    
-    
-        /* body grid */
+    /* body grid */
     .body--grid-area {
         height: 100vh;
         display: grid;
@@ -45,8 +41,6 @@
         "intro-2";
         grid-template-rows: auto 1fr;
     }
-    
-    
     main, .main {
         grid-area: main;
         background: #f1f1f1;
